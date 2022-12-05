@@ -1,0 +1,64 @@
+# funkcja ord() - zwraca kod ascii pod
+# ASCII dziesiętnie	ASCII szesnastkowo	ASCII ósemkowo	znak	opis
+# 64	40	100	@
+# 65	41	101	A
+# 66	42	102	B
+# 67	43	103	C
+# 68	44	104	D
+# 69	45	105	E
+# 70	46	106	F
+# 71	47	107	G
+# 72	48	110	H
+# 73	49	111	I
+# 74	4a	112	J
+# 75	4b	113	K
+# 76	4c	114	L
+# 77	4d	115	M
+# 78	4e	116	N
+# 79	4f	117	O
+# 80	50	120	P
+# 81	51	121	Q
+# 82	52	122	R
+# 83	53	123	S
+# 84	54	124	T
+# 85	55	125	U
+# 86	56	126	V
+# 87	57	127	W
+# 88	58	130	X
+# 89	59	131	Y
+# 90	5a	132	Z
+
+# Funkcja chr() - zwraca znak dla podanego kodu ascii
+# print(ord("B"))
+# print(ord("L"))
+# print(ord("Y"))
+# print(chr(66))
+# print(chr(76))
+# print(chr(89))
+
+
+#wzorcowy alfabet
+# for i in range (65,91):
+#     print(chr(i))
+
+
+#JAK Z NAPISU WYJĄĆ LITERKI
+# napis = "I_Maciej"
+# print(len(napis))
+# print(napis[0])
+# print(napis[1])
+# napis = input()
+# for i in range (0, len(napis)):
+#     print(napis[i])
+
+# napis = input()
+# for i in range (0, len(napis)):
+#     print(ord(napis[i]))
+
+# zaszyfruj napis w kodzie Cezara o kluczu = 3
+
+# napis = input()
+# szyfr = ""
+# for i in range (0, len(napis)):
+#     szyfr = szyfr + chr(65 + (ord(napis[i])-65+3) % 26)
+# print(napis, szyfr)
