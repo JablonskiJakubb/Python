@@ -1,0 +1,47 @@
+# NWW
+a, b = int(input()), int(input())
+iloczyn = a*b
+while b > 0:
+    a, b = b, a % b
+NWD = a
+print(iloczyn//a)
+
+
+# NWW ODEJ
+
+# wspólny mianownik
+# 12*8 = NWD(12,8) * NWW (12,8)
+
+# NWW = a*b//NWD
+
+# a = int(input())
+# b = int(input())
+# iloczyn = a * b
+# while b > 0:
+#     a, b = b, a % b
+# NWD = a
+# print(iloczyn // NWD)
+
+# # NWW MODULO
+# a = int(input())
+# b = int(input())
+# iloczyn = a*b
+# while b > 0:
+#     a, b = b, a % b
+# print(iloczyn//a)
+
+
+
+# a = int(input())
+# b = int(input())
+# iloczyn = a*b
+# while b > 0:
+#     a, b = b, a % b
+# print(iloczyn//a)
+
+# a = int(input())
+# b = int(input())
+# iloczyn = a * b
+# while b > 0:
+#     a, b = b, a % b
+# print(iloczyn // NWD)
