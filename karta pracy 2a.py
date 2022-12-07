@@ -50,4 +50,46 @@ import math
 #         else:
 #             print("NIE, żadna z nich nie jest równa lub wszystkie 3 są równe")
 #
+# zad 4
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
 #
+# print("najmniejsza z nich to")
+# if (a < b and a < c and a < d):
+#     print(a)
+#
+# if (a > b and c > b and b < d):
+#     print(b)
+#
+# if (c < b and d > c and a > c):
+#     print(c)
+#
+# if (d < b and d < c and a < d):
+#     print(d)
+
+# zad 5
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# if (a + b > c and a + c > b and b + c > a):
+#     print("spełnia")
+# else:
+#     print("nie spełnia")
+
+# # zad 6
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# if (a+b+c==180):
+#     print("trójkąt")
+# else:
+#     quit("nie jest trójkątem")
+# if (a or b or c > 90):
+#     print("rorwartokątny")
+# elif (a or b or c == 90):
+#     print("prostokątny")
+# elif (a and b and c > 90):
+#     print("ostrokątny")
+
