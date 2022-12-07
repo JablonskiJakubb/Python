@@ -1,0 +1,17 @@
+y=b
+iloczyn = x*y
+while y > 0:
+    x, y = y, x % y
+print(iloczyn//x)
+e = iloczyn//x
+# 1   1    2    5    7
+# - + - =  -- + -- = -
+# 10  4    20   20   20
+c = int(input("podaj 1 licznik"))
+d = int(input("podaj 2 liczbik"))
+f = e//a
+g = e//b
+
+print(c*f + g*d)
+print("-")
+print(e)
