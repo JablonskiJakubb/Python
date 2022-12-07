@@ -20,7 +20,10 @@ d = int(input("podaj 2 liczbik"))
 f = e//a
 g = e//b
 
-print(c*f + g*d)
-print("-")
-print(e)
-
+liczniki = c*f + g*d
+if (liczniki > e):
+    liczniki = liczniki-e
+    print("1 cała i ", end="")
+print(liczniki, end="")
+print("/", end="")
+print(e, end="")
