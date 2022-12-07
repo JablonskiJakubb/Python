@@ -82,14 +82,11 @@ import math
 # a = int(input())
 # b = int(input())
 # c = int(input())
-# if (a+b+c==180):
-#     print("trójkąt")
-# else:
-#     quit("nie jest trójkątem")
-# if (a or b or c > 90):
-#     print("rorwartokątny")
-# elif (a or b or c == 90):
-#     print("prostokątny")
-# elif (a and b and c > 90):
-#     print("ostrokątny")
-
+# if (a + b + c !=180):
+#     quit("nie jest to trójkąt")
+# if (a >90 or b >90 or c>90):
+#     print("rozwarty")
+# elif (a < 90 and b < 90 and c < 90):
+#     print("ostry")
+# elif (a == 90 or b == 90 or c == 90):
+#     print("prosty")
