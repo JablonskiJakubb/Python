@@ -1,3 +1,20 @@
+# # zadanie 2
+# osiem = 0
+# szesn = 0
+# for i in range(100,999):
+#     osiem = osiem + i % 8
+#     szesn = szesn + i % 16
+#
+# wynik = osiem + (szesn - osiem)
+# print(wynik)
+
+# # zadanie 3
+
+for i in range (10,99):
+    if i % 7 == 0:
+        print(i)
+print()
+
 # a = int(input())
 # b = int(input())
 # c = int(input())
