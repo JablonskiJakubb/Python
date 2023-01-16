@@ -1,0 +1,76 @@
+do poprawy
+
+a, b, c ,d = map(int, input().split())
+
+for i in range(1,11):
+    if i >= a and i <= b:
+        (print("_", end=""))
+    else:
+        (print("=", end=""))
+print()
+for i in range(1,11):
+    if i >= c and i <= d:
+        (print("_", end=""))
+    else:
+        (print("=", end=""))
+
+if a == c and b == d:
+    print(b-c)
+elif a == c:
+    print(b - c)
+
+print()
+if a < c:
+    print("niebieski jest pierwszy")
+    if b < c:
+        print("nie")
+    if b == c:
+        print("stykają się")
+    if b > c:
+        print(b - c)
+
+elif a > c:
+    print("czarny jest pierwszy")
+    if d < a:
+        print("nie")
+    elif b > d:
+        print(d - a)
+    elif b == c:
+        print("stykają się")
+    elif b > d:
+        print(d-c)
+        
+        
+        
+     
+     
+     
+     
+     
+     
+     a, b, c, d = map(int, input().split())
+if a == c:
+    if b >= d:
+        print(d-c)
+    else:
+        print(b-a)
+elif a < c:  # 3 7 8 9
+    if b == c:
+        print(0)
+    elif b < c:
+        print("NIE")
+    else:
+        if b >= d:
+            print(d - c)
+        else:
+            print(b - c)
+elif a > c:
+    if d == a:
+        print(0)
+    elif d < a:
+        print("NIE")
+    else:  # d > a
+        if d >= b:
+            print(b - a)
+        else:
+            print(d - a)
