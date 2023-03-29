@@ -1,0 +1,98 @@
+dodawanie 2 ułamków
+a = int(input("podaj pierwszy mianownik"))
+b = int(input("podaj drugi mianownik"))
+c = int(input("podaj pierwszy licznik"))
+d = int(input("podaj drugi licznik"))
+
+c = c * b
+d = d * a
+mianownik = a * b
+licznik = c + d
+if licznik > mianownik:
+    całości = licznik // mianownik
+    licznik = licznik % mianownik
+if całości > 0:
+    print(całości)
+skracanie = math.gcd(licznik,mianownik)
+print(licznik//skracanie)
+print("_")
+print(mianownik//skracanie)
+
+
+dodawanie 3 ułamków
+a = int(input("licznik#1"))
+b = int(input("Mianownik#1"))
+c = int(input("Licznik#2"))
+d = int(input("Mianownik#2"))
+e = int(input("Licznik#3"))
+f = int(input("Mianownik#3"))
+mianownik = bdf
+a = a * d * f
+c = c * b * f
+e = e * b * d
+x = a + c + e
+import math
+gcd = math.gcd(x,mianownik)
+l = x//gcd
+m = mianownik//gcd
+calosci = 0
+if l >= m:
+    całości = l // m
+    l = l % m
+if całości > 0:
+    print(całości)
+if l > 0:
+    print(l)
+    print("_")
+    print(m)
+
+odejmowanie ułamków 
+a = int(input("podaj pierwszy licznik"))
+b = int(input("podaj pierwszy mianownik"))
+c = int(input("podaj drugi licznik"))
+d = int(input("podaj drugi mianownik"))
+a = a * d
+c = c * b
+licznik = a - c
+mianownik = b * d
+skracanie = math.gcd(licznik,mianownik)
+print(licznik//skracanie)
+print("_")
+print(mianownik//skracanie)
+
+mnożenie ułamków
+a = int(input("podaj pierwszy licznik"))
+b = int(input("podaj pierwszy mianownik"))
+c = int(input("podaj drugi licznik"))
+d = int(input("podaj drugi mianownik"))
+e = a * c
+f = b * d
+if e >= f:
+    całości = e//f
+    e = e%f
+if całości > 0
+	print(całości)
+skracanie = math.gcd(e,f)
+if e>0:
+    print(e//skracanie)
+    print("_")
+    print(f//skracanie)
+
+dzielenie 
+# a = int(input("podaj pierwszy licznik"))
+# b = int(input("podaj pierwszy mianownik"))
+# c = int(input("podaj drugi licznik"))
+# d = int(input("podaj drugi mianownik"))
+#
+# e = a * d
+# f = b * c
+# if e > f:
+#     całości = e % f
+#     e = e // f
+# if całości > 0:
+#     print(całości)
+# skracanie = math.gcd(e,f)
+# if e>0:
+#     print(e//skracanie)
+#     print("_")
+#     print(f//skracanie)
