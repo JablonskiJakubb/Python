@@ -1,0 +1,42 @@
+# 1
+# suma = 0
+# for i in range(100,1000):
+#     suma = suma + i
+# print(suma)
+
+# 2
+# suma = 0
+# for i in range(10,100,6):
+#     suma = suma + i
+# print(suma)
+
+# 3
+# import random
+# T = [1,2,3,4,5]
+# for i in range(5):
+#     T[i] = random.randint(1000,10000)
+# print(max(T))
+
+# 4
+# import random
+# a = int(input())
+# def suma(a):
+#     suma = 0
+#     while a > 0:
+#         suma = suma + a % 10
+#         a = a // 10
+#     return suma
+# print(suma(a))
+
+# 5
+
+# b = int(input())
+# x = (b % 10)
+# y = (b // 100)
+# z = (((b % 100) - b %10) // 100)
+# if x > y and x > z:
+#     print (x)
+# elif y > x and y > z:
+#     print(y)
+# elif z > x and x > y:
+#     print(z)
