@@ -45,6 +45,68 @@
 # for i in range(1,n+1):
 #     if(n % i == 0 and CzyPierwsza(i) == True):
 #         print(i)
+#zadanie 6
+# def CzyPierwsza(x):
+#     for i in range(2, x//2 + 1):
+#         if x % i == 0:
+#             return False
+#     return True
+#
+# a = int(input())
+# b = int(input())
+# if (CzyPierwsza(a) and CzyPierwsza(b) and abs(a-b) == 2)
+#     print("te liczby są bliźniacze")
+
+#zadanie 7
+# def sumadzielnikow(x):
+#     z = 0
+#     for i in range(1,x):
+#         if(x % i == 0):
+#             z += i
+#     return z
+#
+# a = int(input())
+# if (a == sumadzielnikow(a)):
+#     print("tak")
+# else:
+#     print("nie")
+
+#zadanie 8
+# def sumadzielnikow(x):
+#     z = 0
+#     for i in range(1,x):
+#         if(x % i == 0):
+#             z += i
+#     return z
+#
+# a = int(input())
+# b = int(input())
+# if(a != b and sumadzielnikow(a) == b and sumadzielnikow(b) == a):
+#     print("są zaprzyjaźnione")
+# else:
+#     print("są wrogie")
+
+#zadanie 9
+# def CzyPierwsza(x):
+#     for i in range(2, x // 2 + 1):
+#         if x % i == 0:
+#             return False
+#     return True
+#
+# for i in range(3,998):
+#     if CzyPierwsza(i) and CzyPierwsza(i+2):
+#         print(i,"jest bliźniaczą z", i+2)
+
+#zadanie 10
+# def sumadzielnikow(x):
+#     z = 0
+#     for i in range(1,x):
+#         if(x % i == 0):
+#             z += i
+#     return z
+# for i in range(1,1000):
+#     if(sumadzielnikow(i) == i):
+#         print(i)
 
 
 
