@@ -110,4 +110,59 @@
 
 
 
+#zadanie 1
+# n = int(input())
+# dzielnik = 2
+# while n>1:
+#     while n % dzielnik == 0:
+#         print(dzielnik)
+#         n = n//dzielnik
+#     dzielnik +=1
+
+#zadanie 2
+# n = int(input())
+# dzielnik = 2
+# Suma = 0
+# while n>1:
+#     while n % dzielnik == 0:
+#         Suma += dzielnik
+#         n = n//dzielnik
+#     dzielnik +=1
+# print(Suma)
+
+#zadanie 3
+# n = int(input())
+# dzielnik = 2
+# Suma = 0
+# while n>1:
+#     while n % dzielnik == 0:
+#         Suma += dzielnik
+#         n = n//dzielnik
+#     dzielnik +=1
+# print(Suma)
+#
+# def CzyPierwsza(x):
+#     for i in range(2, x//2 + 1):
+#         if x % i == 0:
+#             return False
+#     return True
+#
+# if(CzyPierwsza(Suma)):
+#     print("tak")
+# else:
+#     print("nie")
+
+#zadanie 4
+n = int(input())
+T = []
+dzielnik = 2
+while n>1:
+    while n % dzielnik == 0:
+        if dzielnik not in T:
+            T.append(dzielnik)
+        n = n//dzielnik
+    dzielnik +=1
+
+
+
 
