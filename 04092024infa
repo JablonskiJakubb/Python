@@ -110,7 +110,7 @@
 
 
 
-#zadanie 1
+# zadanie 1
 # n = int(input())
 # dzielnik = 2
 # while n>1:
@@ -153,15 +153,42 @@
 #     print("nie")
 
 #zadanie 4
+# n = int(input())
+# T = []
+# dzielnik = 2
+# while n>1:
+#     while n % dzielnik == 0:
+#         if dzielnik not in T:
+#             T.append(dzielnik)
+#         n = n//dzielnik
+#     dzielnik +=1
+# print(T)
+
+#zadanie 5
+def rozdz(x):
+    suma = 0
+    while x > 0:
+        reszta = x % 10
+        suma = suma + reszta
+        x = x // 10
+    return suma
+print(rozdz(202))
 n = int(input())
-T = []
+p = n
+Suma = 0
 dzielnik = 2
 while n>1:
     while n % dzielnik == 0:
-        if dzielnik not in T:
-            T.append(dzielnik)
+        Suma += rozdz(dzielnik)
         n = n//dzielnik
     dzielnik +=1
+print(Suma)
+suma2 = rozdz(p)
+print(suma2)
+if (Suma == suma2):
+    print("jest liczbą smitha")
+
+
 
 
 
