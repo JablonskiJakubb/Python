@@ -1,0 +1,63 @@
+16/10/2024
+
+#Zadanie 1
+imie = input("Podaj swoje imię: ")
+nazwisko = input("Podaj swoje nazwisko: ")
+
+with open("dane_osobowe.txt", "w") as plik:
+    plik.write(imie + "\n")
+    plik.write(nazwisko + "\n")
+
+print("Dane zostały zapisane.")
+
+#Zadanie 2
+
+with open("dane_osobowe.txt", "r") as plik:
+    imie = plik.readline().strip()
+    nazwisko = plik.readline().strip()
+
+print(f"Witaj {imie} {nazwisko}!")
+
+#Zadanie 3
+import random
+
+with open("losowe.txt", "w") as plik:
+    for _ in range(10):
+        liczba = random.randint(1, 100)
+        plik.write(str(liczba) + "\n")
+
+with open("losowe.txt", "r") as plik:
+    liczby = [int(linia.strip()) for linia in plik]
+
+suma = sum(liczby)
+minimum = min(liczby)
+maksimum = max(liczby)
+srednia = suma / len(liczby)
+
+print(f"Suma: {suma}")
+print(f"Minimum: {minimum}")
+print(f"Maksimum: {maksimum}")
+print(f"Średnia: {srednia}")
+
+#Zadanie 4
+def Policz_Ilość_Parzystych_ciągów(filename):
+    with open(filename, 'r') as file:
+        count = 0
+        for line in file:
+            numbers = list(map(int, line.split()))
+            total_sum = sum(numbers)
+            if total_sum % 2 == 0:
+                count += 1
+        return count
+filename = 'ciagi.txt'
+result = Policz_Ilość_Parzystych_ciągów(filename)
+print(f'Liczba ciągów o parzystej sumie wyrazów: {result}')
+
+#Zadanie 5
+def Pokaz_ponumerowane_slowa(filename):
+    with open(filename, 'r') as file:
+        words = file.read().split()
+        for index, word in enumerate(words, start=1):
+            print(f'{index}: {word}')
+filename = 'slowa.txt'
+Pokaz_ponumerowane_slowa(filename)
