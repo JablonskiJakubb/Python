@@ -72,3 +72,5 @@ def Pokaz_ponumerowane_slowa(filename):
             print(f'{index}: {word}')
 filename = 'slowa.txt'
 Pokaz_ponumerowane_slowa(filename)
+
+https://drive.google.com/drive/folders/1PO3HAZ2CR4QG80sSmwte5FJ7bo5M8KE4
