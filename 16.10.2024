@@ -58,6 +58,17 @@ def Pokaz_ponumerowane_slowa(filename):
     with open(filename, 'r') as file:
         words = file.read().split()
         for index, word in enumerate(words, start=1):
+
+#zadanie 5.1
+# def Pokaz_ponumerowane_slowa(filename):
+#     with open(filename, 'r') as file:
+#         slowa = file.read().split()
+#         nrslowa = 1
+#         for line in slowa:
+#             print(nrslowa, line)
+#             nrslowa += 1
+# filename = "slowa.txt"
+# Pokaz_ponumerowane_slowa(filename)
             print(f'{index}: {word}')
 filename = 'slowa.txt'
 Pokaz_ponumerowane_slowa(filename)
