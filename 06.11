@@ -1,0 +1,74 @@
+# def scal(tab,l,mid,r):
+#     mid = mid // 2
+#     i = l
+#     j = mid + 1
+#     k = l
+#     while i <= mid and j <= r:
+#         if tab[i] < tab[j]:
+#             pom[k] = tab[i]
+#             i = i + 1
+#         else:
+#             pom[k] = tab[j]
+#             j = j + 1
+#         k = k + 1
+#     while i <= mid:
+#         pom[k] = tab[j]
+#         i = i + 1
+#         k = k + 1
+#     while j<=prawy:
+#         pom[k] = tab[j]
+#         j = j + 1
+#         k = k + 1
+#     for i in range(i = lewy, i)
+
+def scal(t1,t2):
+    wynik = []
+    n1 = len(t1)
+    n2 = len(t2)
+    i = 0
+    j = 0
+    while i<n1 and j <n2:
+        if t1[i] < t2[j]:
+            wynik.append(t1[i])
+            i = i + 1
+        else:
+            wynik.append(t2[j])
+            j = j + 1
+    wynik.extend(t1[i:])
+    wynik.extend(t2[j:])
+    return wynik
+def sortowanie_przez_scalanie(t):
+    n = len(t)
+    if n > 1:
+        srodek = (n-1)//2
+        lewy = sortowanie_przez_scalanie(t[:srodek+1])
+        prawy = sortowanie_przez_scalanie(t[srodek+1:])
+        return scal(lewy, prawy)
+    return t
+
+
+# ciag = input("podaj ciag ")
+# t = list(map(int, ciag.split()))
+# print(t)
+# t = sortowanie_przez_scalanie(t)
+# print(t)
+# t = []
+# # Funkcja do wczytania danych z pliku
+# with open("ciagi.txt", 'r') as plik:
+#     for linia in plik:
+#         linia = linia.strip()
+#         t.append(linia)
+# plik.close()
+#
+# with open("wyniki.txt", "w") as plik:
+#     for i in range(len(t) - 1):
+#         wynik = sortowanie_przez_scalanie(t[i])
+#         plik.write(" ".join(map(str, wynik)))
+
+import random
+random_numbers = [random.randint(1, 1000000) for _ in range(1000000)]
+
+sorted_numbers = sortowanie_przez_scalanie(random_numbers)
+with open('wyniki_3.txt', 'w') as file:
+    for number in sorted_numbers:
+        file.write(f"{number}\n")
